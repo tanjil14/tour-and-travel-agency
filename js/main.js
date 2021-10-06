@@ -38,3 +38,22 @@ videoBtn.forEach((btn) => {
     document.querySelector("#video-slider").src = src;
   });
 });
+
+// custom slider
+// const video = [
+//   "images/vid-1.mp4",
+//   "images/vid-2.mp4",
+//   "images/vid-3.mp4",
+//   "images/vid-4.mp4",
+//   "images/vid-5.mp4",
+// ];
+// let videoIndex = 0;
+// const videoElement = document.getElementById("video-slider");
+// setInterval(() => {
+//   if (videoIndex >= video.length) {
+//     videoIndex = 0;
+//   }
+//   const videoUrl = video[videoIndex];
+//   videoElement.setAttribute("src", videoUrl);
+//   videoIndex++;
+// }, 4000);
