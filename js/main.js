@@ -57,3 +57,38 @@ videoBtn.forEach((btn) => {
 //   videoElement.setAttribute("src", videoUrl);
 //   videoIndex++;
 // }, 4000);
+
+// make it functional for repeating task
+function Slider(name) {
+  // swiper for slider
+  new Swiper(name, {
+    loop: true,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    breakpoints: {
+      0: {
+        slidesPerView: name ===".review-slider"?1:2,
+        // spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: name ===".review-slider"?2:4,
+        // spaceBetween: 40,
+      },
+      1020: {
+        slidesPerView: name ===".review-slider"?3:6,
+        // spaceBetween: 50,
+      },
+    },
+  });
+}
+// for 1st review
+Slider(".review-slider");
+// for 2nd brand
+Slider(".brand-slider");
